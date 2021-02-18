@@ -1,0 +1,88 @@
+{% extends "./nav.html" %}
+
+{% block title %}
+Dashboard
+{% endblock %}
+
+{% block styles %}
+{{super()}}
+<link rel="stylesheet" href="{{url_for('.static', filename='dashboard.css')}}">
+{% endblock %}
+
+{% block content %}
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">Welcome, {{ name }}</h1>
+
+          <div class="row placeholders">
+            <form method="POST" action="">
+              <h2 id="command_light_text" class="form-light-heading">Give commands to the light</h2>
+              {{ form.hidden_tag() }}
+              {{ form.choice_a() }}
+              {{ form.choice_b() }}
+              {{ form.choice_c() }}
+              {{ form.choice_d() }}
+            </form>
+          </div>
+
+          <div class="text-center">
+            <img id=img_lamp src="{{url_for('static', filename='./images/' + lamp, next=time_stamp)}}" class="img-fluid" alt="Responsive lamp image">
+            <h2 class="page-header">Lamp state: {{ lamp_step }}</h2>
+            <h2 class="page-header"></h2>
+            <h2 class="page-header">Temperatur in Celsius: {{ temp_bme }}</h2>
+            <h2 class="page-header">Humidity in percent: {{ hum_bme }}</h2>
+            <h2 class="page-header">Pressure in hPa: {{ pres_bme }}</h2>
+            <h2 class="page-header">Time sensor: {{ time_bme }}</h2>
+           </div>
+
+        </div>
+      </div>
+    </div>
+
+{% endblock %}
+
+{% block scripts %}
+{{super()}}
+<script>
+  window.onload = function() {
+    console.log('hallo_1');
+    console.log({{ lamp_step }});
+    //if (document.getElementById('choice_c').value == 0) {
+    if({{ lamp_step }} == 0) {
+        console.log('hier');
+        document.getElementById('choice_c').style.visibility = 'hidden';
+    } else {
+        console.log('hier2');
+        document.getElementById('choice_c').style.visibility = 'visible';
+    }
+    if({{ lamp_step }} == 8) {
+        console.log('hier_4');
+        document.getElementById('choice_d').style.visibility = 'hidden';
+    } else {
+        console.log('hier5');
+        document.getElementById('choice_d').style.visibility = 'visible';
+    }
+  }
+  $("#choice_a").on('click', function() {
+    $('#choice_a').css('background', '#fbdb67');
+    $('#command_light_text').html("<h2 class=\"form-light-heading\">Light ON</h2>");
+    //$('#img_lamp').html("<img id=img_lamp src=\"{{url_for('static', filename='./images/Lamp_OFF.png')}}\" class=\"img-fluid\" alt=\"Responsive lamp image\">");
+  });
+  $("#choice_b").on('click', function() {
+    $('#choice_b').css('background', '#121210');
+    $('#command_light_text').html("<h2 class=\"form-light-heading\">Light OFF</h2>");
+  });
+  $("#choice_c").on('click', function() {
+    $('#choice_c').css('background', '#808009');
+    $('#command_light_text').html("<h2 class=\"form-light-heading\">Dimm DOWN</h2>");
+  });
+  $("#choice_d").on('click', function() {
+    $('#choice_d').css('background', '#f2f2ab');
+    $('#command_light_text').html("<h2 class=\"form-light-heading\">Dimm UP</h2>");
+  });
+
+
+</script>
+{% endblock %}

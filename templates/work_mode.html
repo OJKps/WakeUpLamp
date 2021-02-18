@@ -1,0 +1,57 @@
+{% extends "./nav.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}
+Work Mode
+{% endblock %}
+
+{% block styles %}
+{{super()}}
+<link rel="stylesheet" href="{{url_for('.static', filename='dashboard.css')}}">
+{% endblock %}
+
+{% block content %}
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">No work mode active</h1>
+
+          <div class="row placeholders">
+            <form class="form-alarm-input" method="POST" action="/work_mode">
+              <h2 id="command_alarm_text" class="form-light-heading">Set the time till when you want to work</h2>
+              {{ form.hidden_tag() }}
+              {{ wtf.form_field(form.time) }}
+              <button class="btn btn-lg btn-primary" type="submit">Set work mode</button>
+            </form>
+          </div>
+          <div class="span3">
+          <table class="table table-hover table-striped">
+             <thead class="thead-dark">
+                <tr>
+                   <th scope="col">User</th>
+                   <th scope="col">Started work</th>
+                   <th scope="col">Ended work</th>
+                   <th scope="col">Hours worked</th>
+                   <th scope="col">Minutes worked</th>
+                </tr>
+             </thead>
+
+             <tbody>
+                {% for entry in col_work_mode_entry %}
+                   <tr>
+                      <th scope="row">{{ entry.username }}</th>
+                      <td>{{ entry.work_start }}</td>
+                      <td>{{ entry.work_end }}</td>
+                      <td>{{ entry.work_delta_hours }}</td>
+                      <td>{{ entry.work_delta_mins }}</td>
+                   </tr>
+                {% endfor %}
+             </tbody>
+          </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+{% endblock %}

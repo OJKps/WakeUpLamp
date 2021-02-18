@@ -1,0 +1,24 @@
+{% extends "./nav.html" %}
+
+{% block title %}
+Word Mode
+{% endblock %}
+
+{% block styles %}
+{{super()}}
+<link rel="stylesheet" href="{{url_for('.static', filename='fireworks.css')}}">
+{% endblock %}
+
+{% block content %}
+    <div class="pyro">
+        <div class="before"></div>
+        <div class="after"></div>
+        <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <h1 class="page-header">Nice, {{ name }}!</h1>
+        </div>
+      </div>
+    </div>
+    </div>
+{% endblock %}

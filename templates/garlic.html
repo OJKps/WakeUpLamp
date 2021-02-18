@@ -1,0 +1,26 @@
+{% extends "./nav.html" %}
+
+{% block title %}
+Garlic
+{% endblock %}
+
+{% block styles %}
+{{super()}}
+<link rel="stylesheet" href="{{url_for('.static', filename='background_animation.css')}}">
+{% endblock %}
+
+{% block content %}
+    <div class="leaf">
+        <div> <img src="{{url_for('static', filename='./images/Lamp_ON.png')}}" alt="Responsive garlic image"></div>
+        <div> <img src="{{url_for('static', filename='./images/garlic1.png')}}" height="275px" alt="Responsive garlic image"></div>
+        <div> <img src="{{url_for('static', filename='./images/garlic2.png')}}" height="275px" alt="Responsive garlic image"></div>
+        <div> <img src="{{url_for('static', filename='./images/garlic2.png')}}" height="275px" alt="Responsive garlic image"></div>
+        <div> <img src="{{url_for('static', filename='./images/Lamp_ON.png')}}" alt="Responsive garlic image"></div>
+        <div> <img src="{{url_for('static', filename='./images/garlic1.png')}}" height="275px" alt="Responsive garlic image"></div>
+        <div> <img src="{{url_for('static', filename='./images/garlic2.png')}}" height="275px" alt="Responsive garlic image"></div>
+        <div> <img src="{{url_for('static', filename='./images/Lamp_ON.png')}}" alt="Responsive garlic image"></div>
+        <div> <img src="{{url_for('static', filename='./images/garlic1.png')}}" height="275px" alt="Responsive garlic image"></div>
+        <div> <img src="{{url_for('static', filename='./images/garlic1.png')}}" height="275px" alt="Responsive garlic image"></div>
+    </div>
+    <div> <img src="{{url_for('static', filename='./images/garlic1.png')}}" alt="Responsive garlic image"></div>
+{% endblock %}

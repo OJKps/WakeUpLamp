@@ -1,0 +1,32 @@
+{% extends "./nav.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}
+Alarm Clock
+{% endblock %}
+
+{% block styles %}
+{{super()}}
+<link rel="stylesheet" href="{{url_for('.static', filename='dashboard.css')}}">
+{% endblock %}
+
+{% block content %}
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">{{ alarm_mess }}</h1>
+
+          <div class="row placeholders">
+            <form class="form-alarm-input" method="POST" action="/alarm_clock">
+              <h2 id="command_alarm_text" class="form-light-heading">Set the time for the alarm</h2>
+              {{ form.hidden_tag() }}
+              {{ wtf.form_field(form.time) }}
+              <button class="btn btn-lg btn-primary" type="submit">Set alarm</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+{% endblock %}

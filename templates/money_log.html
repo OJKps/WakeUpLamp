@@ -1,0 +1,59 @@
+{% extends "./nav.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}
+Money Log
+{% endblock %}
+
+{% block styles %}
+{{super()}}
+<link rel="stylesheet" href="{{url_for('.static', filename='dashboard.css')}}">
+{% endblock %}
+
+{% block content %}
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">Money Log</h1>
+
+          <div class="row placeholders">
+            <form class="form-alarm-input" method="POST" action="/money_log">
+              <h2 id="command_alarm_text" class="form-light-heading">Input amount and category</h2>
+                {{ form.hidden_tag() }}
+                {{ wtf.form_field(form.amount) }}
+                {{ wtf.form_field(form.reason) }}
+              <button class="btn btn-lg btn-primary" type="submit">Submit</button>
+            </form>
+          </div>
+          <div class="span3">
+          <table class="table table-hover table-striped">
+             <thead class="thead-dark">
+                <tr>
+                    <th scope="col">User</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Reason</th>
+                    <th scope="col">Amount in €</th>
+                </tr>
+             </thead>
+
+             <tbody>
+                {% for entry in col_work_mode_entry %}
+                   <tr>
+                        <th scope="row">{{ entry.username }}</th>
+                        <td>{{ entry.date }}</td>
+                        <td>{{ entry.reason }}</td>
+                        <th>{{ entry.money_log_input }}</th>
+                   </tr>
+                {% endfor %}
+             </tbody>
+          </table>
+          </div>
+          <div class="text-center">
+            <img id=img_lamp src="{{url_for('static', filename='./images/' + name_plot, next=time_stamp)}}" class="img-fluid" alt="Responsive image">
+          </div>
+        </div>
+      </div>
+    </div>
+
+{% endblock %}

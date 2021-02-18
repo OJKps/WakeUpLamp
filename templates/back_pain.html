@@ -1,0 +1,45 @@
+{% extends "./nav.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}
+Alarm Clock
+{% endblock %}
+
+{% block styles %}
+{{super()}}
+<link rel="stylesheet" href="{{url_for('.static', filename='dashboard.css')}}">
+{% endblock %}
+
+{% block content %}
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">Back Pain Monitor</h1>
+
+          <div class="row placeholders">
+            <form class="form-back-pain-input" method="POST" action="/back_pain">
+              <h2 id="command_alarm_text" class="form-light-heading">How bad is your Back, {{ name }}?</h2>
+              {{ form.hidden_tag() }}
+              {{ form.back_pain(min=0, max=10, oninput="outputUpdate(value)") }}
+              <output class="output-number-back-pain" for="back_pain" id="selected-pain">Level: {{ form.back_pain.data }}</output>
+              <button class="btn btn-lg btn-primary" type="submit">Submit</button>
+            </form>
+          </div>
+          <div class="text-center">
+            <img id=img_lamp src="{{url_for('static', filename='./images/' + name_plot, next=time_stamp)}}" class="img-fluid" alt="Responsive lamp image">
+          </div>
+        </div>
+      </div>
+    </div>
+
+{% endblock %}
+
+{% block scripts %}
+{{super()}}
+<script>
+  function outputUpdate(back_pain) {
+    document.querySelector('#selected-pain').value = "Level: " + back_pain;
+  }
+</script>
+{% endblock %}

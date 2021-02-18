@@ -1,0 +1,32 @@
+{% extends "./nav.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}
+Work Mode
+{% endblock %}
+
+{% block styles %}
+{{super()}}
+<link rel="stylesheet" href="{{url_for('.static', filename='dashboard.css')}}">
+{% endblock %}
+
+{% block content %}
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+
+          <div class="row placeholders">
+              <h2 class="page-header">{{ time_worked }}</h2>
+              <h2 class="page-header">{{ time_work_end }}</h2>
+              <h2 class="page-header">{{ time_left }}</h2>
+            <form method="POST" action="/work_mode">
+              {{ form.hidden_tag() }}
+              {{ form.end_work_mode_button() }}
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+{% endblock %}
