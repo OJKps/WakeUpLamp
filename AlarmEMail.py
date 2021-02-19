@@ -25,7 +25,7 @@ def send_email():
     try:
         s = smtplib.SMTP(host='smtp.gmail.com', port=587)
         s.starttls()
-        s.login('stockdatapython@gmail.com', 'ojk76131')
+        s.login('email', 'psw')
 
         names, emails = get_contacts('email.txt')
         message_template = read_template('message.txt')
