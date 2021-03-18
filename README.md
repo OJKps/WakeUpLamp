@@ -6,4 +6,32 @@ The remote control is switched via a RaspberryPi.
 This means that the lamp can be placed independently of the RaspberryPi and you do not have to work with large currents. 
 To control the lamp, the Raspberry hosts a local website where you can fully control the lamp, set an alarm and much more.
 
-![Image](/Example_Images_WakeUpLamp/Dashboard_WakeUpLamp.PNG)
+<div class="row">
+  <div class="column">
+    <img alt="original" src="/Example_Images_WakeUpLamp/Hardware_WakeUpLamp2.jpeg" height="500px" />
+  </div>
+  <div class="column">
+    <img alt="original" src="/Example_Images_WakeUpLamp/Hardware_WakeUpLamp.PNG" height="500px" />
+  </div>
+</div> 
+<div class="row">
+  <div class="column">
+    <img alt="original" src="/Example_Images_WakeUpLamp/Dashboard_WakeUpLamp.PNG" height="500px" />
+  </div>
+  <div class="column">
+    <img alt="original" src="/Example_Images_WakeUpLamp/WorkMode_WakeUpLamp.PNG" height="500px" />
+  </div>
+  <div class="column">
+    <img alt="original" src="/Example_Images_WakeUpLamp/ModeMode_WakeUPLamp.PNG" height="500px" />
+  </div>
+  <div class="column">
+    <img alt="original" src="/Example_Images_WakeUpLamp/BackPainMonitor_WakeUpLamp.PNG" height="500px" />
+  </div>
+  <div class="column">
+    <img alt="original" src="/Example_Images_WakeUpLamp/Alarm_WakeUpLamp.PNG" height="500px" />
+  </div>
+  <div class="column">
+    <img alt="original" src="/Example_Images_WakeUpLamp/GarlicMode_WakeUpLamp.PNG" height="500px" />
+  </div>
+</div> 
+
