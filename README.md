@@ -13,7 +13,7 @@ See the examples:
 * IKEA TRÅDFRI lamp control (upper left)
 * Relay (upper right - 2 Channels needed)
 * GY-BME280 Sensor - temperature (top)
-* HC-SR501 PIR Sensor - Infrared (top)
+* HC-SR501 PIR Sensor - infrared (top)
 * 1.5" 128x128 OLED Display Modul, RGB (middle)
 
 <div class="row">
@@ -29,10 +29,15 @@ See the examples:
 
 ### Dashboard
 <img alt="original" src="/Example_Images_WakeUpLamp/Dashboard_WakeUpLamp.PNG" height="500px" />
+### Work Mode
 <img alt="original" src="/Example_Images_WakeUpLamp/WorkMode_WakeUpLamp.PNG" height="500px" />
+### Track Expenses
 <img alt="original" src="/Example_Images_WakeUpLamp/ModeMode_WakeUPLamp.PNG" height="500px" />
+### Backpain Monitor
 <img alt="original" src="/Example_Images_WakeUpLamp/BackPainMonitor_WakeUpLamp.PNG" height="500px" />
+### Alarm
 <img alt="original" src="/Example_Images_WakeUpLamp/Alarm_WakeUpLamp.PNG" height="500px" />
+### Garlic Mode
 <img alt="original" src="/Example_Images_WakeUpLamp/GarlicMode_WakeUpLamp.PNG" height="500px" />
 
 ## License
