@@ -28,7 +28,7 @@ See the examples:
 ## Hosted Website to control the WakeUpLamp
 
 ### Dashboard
-Control the lamp and monitor 
+Control the lamp and monitor //
 <img alt="original" src="/Example_Images_WakeUpLamp/Dashboard_WakeUpLamp.PNG" height="500px" />
 ### Work Mode
 Track your working time
