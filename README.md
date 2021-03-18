@@ -29,7 +29,7 @@ See the examples:
   </div>
 </div>
 
-Everything is fitted into a inexpensive picture frame. Therefore a wooden backboard is created on which the Pi, Relay and the lamp controller a placed. The acrylic glass is fixed on top of the frame and hold by simple, sliding frame-holders.
+Everything is fitted into a inexpensive picture frame. Therefore a wooden backboard is created on which the Pi, Relay and the lamp controller a placed. The acrylic glass is fixed on top of the frame and hold by simple, sliding frame-holders. Everytime the website is used the display shows time and current alarm.
 
 ## Hosted Website to control the WakeUpLamp
 
