@@ -21,10 +21,10 @@ See the examples:
 
 <div class="row">
   <div class="column">
-    <img alt="original" src="/Example_Images_WakeUpLamp/Hardware_WakeUpLamp2.jpeg" height="500px" />
+    <img alt="original" src="/Example_Images_WakeUpLamp/Hardware_WakeUpLamp2.jpeg" width="300px" />
   </div>
   <div class="column">
-    <img alt="original" src="/Example_Images_WakeUpLamp/Hardware_WakeUpLamp.PNG" height="500px" />
+    <img alt="original" src="/Example_Images_WakeUpLamp/Hardware_WakeUpLamp.PNG" width="300px" />
   </div>
 </div>
 
