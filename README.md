@@ -9,6 +9,13 @@ Please note that the documentation will be updated in future, I will also upload
 See the examples:
 
 ## Hardware
+* RaspberryPi 3 B+ (bottom)
+* IKEA TRÅDFRI lamp control (upper left)
+* Relay (upper right - 2 Channels needed)
+* GY-BME280 Sensor - temperature (top)
+* HC-SR501 PIR Sensor - Infrared (top)
+* 1.5" 128x128 OLED Display Modul, RGB (middle)
+
 <div class="row">
   <div class="column">
     <img alt="original" src="/Example_Images_WakeUpLamp/Hardware_WakeUpLamp2.jpeg" height="500px" />
@@ -19,24 +26,15 @@ See the examples:
 </div>
 
 ## Hosted Website to control the WakeUpLamp
-<div class="row">
-  <div class="column">
-    <img alt="original" src="/Example_Images_WakeUpLamp/Dashboard_WakeUpLamp.PNG" height="500px" />
-  </div>
-  <div class="column">
-    <img alt="original" src="/Example_Images_WakeUpLamp/WorkMode_WakeUpLamp.PNG" height="500px" />
-  </div>
-  <div class="column">
-    <img alt="original" src="/Example_Images_WakeUpLamp/ModeMode_WakeUPLamp.PNG" height="500px" />
-  </div>
-  <div class="column">
-    <img alt="original" src="/Example_Images_WakeUpLamp/BackPainMonitor_WakeUpLamp.PNG" height="500px" />
-  </div>
-  <div class="column">
-    <img alt="original" src="/Example_Images_WakeUpLamp/Alarm_WakeUpLamp.PNG" height="500px" />
-  </div>
-  <div class="column">
-    <img alt="original" src="/Example_Images_WakeUpLamp/GarlicMode_WakeUpLamp.PNG" height="500px" />
-  </div>
-</div> 
+
+### Dashboard
+<img alt="original" src="/Example_Images_WakeUpLamp/Dashboard_WakeUpLamp.PNG" height="500px" />
+<img alt="original" src="/Example_Images_WakeUpLamp/WorkMode_WakeUpLamp.PNG" height="500px" />
+<img alt="original" src="/Example_Images_WakeUpLamp/ModeMode_WakeUPLamp.PNG" height="500px" />
+<img alt="original" src="/Example_Images_WakeUpLamp/BackPainMonitor_WakeUpLamp.PNG" height="500px" />
+<img alt="original" src="/Example_Images_WakeUpLamp/Alarm_WakeUpLamp.PNG" height="500px" />
+<img alt="original" src="/Example_Images_WakeUpLamp/GarlicMode_WakeUpLamp.PNG" height="500px" />
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
 
