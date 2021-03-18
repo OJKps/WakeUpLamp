@@ -14,6 +14,7 @@ See the examples:
 ## Hardware
 * RaspberryPi 3 B+ (bottom)
 * IKEA TRÅDFRI lamp control (upper left)
+* IKEA picture frame
 * Relay (upper right - 2 Channels needed)
 * GY-BME280 Sensor - temperature (top)
 * HC-SR501 PIR Sensor - infrared (top)
@@ -28,12 +29,15 @@ See the examples:
   </div>
 </div>
 
+Everything is fitted into a inexpensive picture frame. Therefore a wooden backboard is created on which the Pi, Relay and the lamp controller a placed. The acrylic glass is fixed on top of the frame and hold by simple, sliding frame-holders.
+
 ## Hosted Website to control the WakeUpLamp
 
 ### Dashboard
 <img alt="original" src="/Example_Images_WakeUpLamp/Dashboard_WakeUpLamp.PNG" height="500px" />
 
-Control the lamp and monitor 
+Control the lamp and monitor. Multiple users can use the website, each user has its own login and entity in a SQLAlchemy database.
+
 ### Work Mode
 <img alt="original" src="/Example_Images_WakeUpLamp/WorkMode_WakeUpLamp.PNG" height="500px" />
 
