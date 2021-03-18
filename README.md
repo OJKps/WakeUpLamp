@@ -28,16 +28,22 @@ See the examples:
 ## Hosted Website to control the WakeUpLamp
 
 ### Dashboard
+Control the lamp and monitor 
 <img alt="original" src="/Example_Images_WakeUpLamp/Dashboard_WakeUpLamp.PNG" height="500px" />
 ### Work Mode
+Track your working time
 <img alt="original" src="/Example_Images_WakeUpLamp/WorkMode_WakeUpLamp.PNG" height="500px" />
 ### Track Expenses
+Monitor expenses over multiple users
 <img alt="original" src="/Example_Images_WakeUpLamp/ModeMode_WakeUPLamp.PNG" height="500px" />
 ### Backpain Monitor
+Plot your backpain
 <img alt="original" src="/Example_Images_WakeUpLamp/BackPainMonitor_WakeUpLamp.PNG" height="500px" />
 ### Alarm
+Set alarm to wake up
 <img alt="original" src="/Example_Images_WakeUpLamp/Alarm_WakeUpLamp.PNG" height="500px" />
 ### Garlic Mode
+Fun mode with garlic and lamps dropping down from the top
 <img alt="original" src="/Example_Images_WakeUpLamp/GarlicMode_WakeUpLamp.PNG" height="500px" />
 
 ## License
