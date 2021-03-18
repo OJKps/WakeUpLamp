@@ -5,7 +5,10 @@ The core idea is to utilize the provided features of the IKEA TRÅDFRI lamp and 
 The remote control is switched via a RaspberryPi. 
 This means that the lamp can be placed independently of the RaspberryPi and you do not have to work with large currents. 
 To control the lamp, the Raspberry hosts a local website where you can fully control the lamp, set an alarm and much more.
+Please note that the documentation will be updated in future, I will also upload a full instruction for the build.
+See the examples:
 
+## Hardware
 <div class="row">
   <div class="column">
     <img alt="original" src="/Example_Images_WakeUpLamp/Hardware_WakeUpLamp2.jpeg" height="500px" />
@@ -13,7 +16,9 @@ To control the lamp, the Raspberry hosts a local website where you can fully con
   <div class="column">
     <img alt="original" src="/Example_Images_WakeUpLamp/Hardware_WakeUpLamp.PNG" height="500px" />
   </div>
-</div> 
+</div>
+
+## Hosted Website to control the WakeUpLamp
 <div class="row">
   <div class="column">
     <img alt="original" src="/Example_Images_WakeUpLamp/Dashboard_WakeUpLamp.PNG" height="500px" />
