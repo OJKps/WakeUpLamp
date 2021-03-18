@@ -45,7 +45,7 @@ Track your working time
 ### Track Expenses
 <img alt="original" src="/Example_Images_WakeUpLamp/ModeMode_WakeUPLamp.PNG" height="500px" />
 
-Monitor expenses over multiple users
+Monitor expenses over multiple users with plots
 ### Backpain Monitor
 <img alt="original" src="/Example_Images_WakeUpLamp/BackPainMonitor_WakeUpLamp.PNG" height="500px" />
 
